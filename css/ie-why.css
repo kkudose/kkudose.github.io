@@ -1,0 +1,19 @@
+html, body {
+	text-align: center;
+}
+
+main,
+#about {
+	padding: 50px;
+	width: 100%;
+}
+
+.container
+{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#about p {
+	text-align: left;	
+}
