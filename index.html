@@ -12,49 +12,57 @@
   <script src="js/smooth-scroll-min.js"></script>
 
   <!--[if lte IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<link rel="stylesheet" href="css/ie-why.css" />
-<![endif]-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie-why.css" />
+  <![endif]-->
 </head>
 <body>
   <main>
-  <div class="container">
-    <h1>Kei Kudose</h1>
-    <p>Hello. I am a software engineer in Austin.
-      <a data-scroll href="#about">More&nbsp;...</a>
-    </p>
-    <ul>
-      <li>
-        <a href="mailto:hello@kkudose.com">
-        <i class="icon icon-envelope-square icon-fw"></i>Email</a>
-      </li>
-      <li>
-        <a href="http://github.com/kkudose">
-        <i class="icon icon-github-square icon-fw"></i>GitHub</a>
-      </li>
-      <li>
-        <a href="http://linkedin.com/in/kkudose">
-        <i class="icon icon-linkedin-square icon-fw"></i>LinkedIn</a>
-      </li>
-    </ul>
-  </div>
+    <div class="container">
+      <h1>Kei Kudose</h1>
+      <p>Hello. I am a software engineer in Austin, TX.
+        <a data-scroll href="#about">More&nbsp;...</a>
+        <noscript>Note: This site uses JavaScript.</noscript>
+      </p>
+      <ul>
+        <li>
+          <!-- simple obsfucation against simple bots -->
+          <script type="text/javascript">
+            document.write('<a href="mai' + 'lto:' + 'hi' + '&#64;' + 'kkudose.com' + '">');
+          </script>
+          <i class="icon icon-envelope-square icon-fw"></i>
+          <script type="text/javascript">
+            document.write('Em' + 'ail');
+          </script></a>
+        </li>
+        <li>
+          <a href="http://github.com/kkudose">
+          <i class="icon icon-github-square icon-fw"></i>GitHub</a>
+        </li>
+        <li>
+          <a href="http://linkedin.com/in/kkudose">
+          <i class="icon icon-linkedin-square icon-fw"></i>LinkedIn</a>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <div id="about">
     <div class="container">
       <h2>About</h2>
-      <p>This summer, I will begin working for <a href="http://www.dell.com/en-us/">Dell</a>.</p>
       <p><em>I am fascinated by the design of all things.</em></p>
-      <p>This spring, I finished my last year at <a href="http://www.utexas.edu/">The University of Texas</a>. Hook 'em!</p>
-      <p>Last summer, I was an intern sr. analyst at <a href="http://www.dell.com/en-us/">Dell</a> developing an extensive internal pricing tool. Technologies I used include C#, ASP.NET MVC, Web API, AngularJS, and Bootstrap.</p>
-      <p>In the past, I have worked as a teaching assistant for <a href="http://users.ece.utexas.edu/~valvano/Volume1/">Introduction to Embedded Systems</a> (EE319K). It was incredibly enlightening and rewarding to work with Dr. Valvano and to help over 100,000 students throughout the world learn.</p>
+      <p>Currently, I am working for <a href="http://www.dell.com/en-us/">Dell</a> IT as a developer.</p>
+      <p>This spring, I finished my final year at <a href="http://www.utexas.edu/">The University of Texas at Austin</a>. Hook 'em!</p>
+      <p>Last year, I was an intern at <a href="http://www.dell.com/en-us/">Dell</a> and developed an extensive internal pricing tool. Technologies I used include ASP.NET MVC, Web API, AngularJS, and Bootstrap. I also had the opportunity to practice Agile methodologies including test driven development.</p>
+      <p>In the past, I have worked as a teaching assistant for <a href="http://users.ece.utexas.edu/~valvano/Volume1/">Introduction to Embedded Systems</a> (EE319K) and its <a href="https://www.edx.org/course/embedded-systems-shape-world-utaustinx-ut-6-03x">edX version</a> (MOOC). It was incredibly enlightening and rewarding to work with Dr. Valvano and to help over 100,000 students throughout the world learn.</p>
       <p><a data-scroll href="#">Return to top</a></p>
+    </div>
   </div>
-<script>
-  smoothScroll.init({
-    speed: 1000,
-    easing: "easeInOutQuad"
-  });
-</script>
+  <script>
+    smoothScroll.init({
+      speed: 1000,
+      easing: "easeInOutQuad"
+    });
+  </script>
 </body>
 </html>
