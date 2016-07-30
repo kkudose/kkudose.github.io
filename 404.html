@@ -20,24 +20,10 @@
         h2 {
             font-size: 5.4vw;
         }
-        p {
-            margin: 5vh 0;
-        }
-        a {
-                -webkit-transition: -webkit-transform 0.4s;
-                -moz-transition: -moz-transform 0.4s;
-            transition: all 0.4s;
-        }
         a:active,
         a:link,
         a:visited {
-            color: #08F;
             text-decoration: none;
-        }
-        a:hover,
-        li a:hover {
-            color: #F90;
-            text-decoration: underline;
         }
         .container {
                 margin: auto;
@@ -47,14 +33,24 @@
                 text-align: center;
                 width: 80vw;
         }
+        
+        @media all and (min-width: 1920px) {
+            h1 {
+                font-size: 24em;
+            }
+            h2 {
+                font-size: 4.4em;
+            }
+        }
        
     </style>
 </head>
 <body>
 <div class="container">
+<a href="/">
     <h1>404</h1>
     <h2>resource not found</h2>
-    <p><a href="/">please navigate to the homepage</a></p>
+</a>
 </div>
 </body>
 </html>
